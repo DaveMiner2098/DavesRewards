@@ -9,7 +9,7 @@ import WebDriverManager.BrowserManager;
 import Navigation.RewardsNavigate;
 
 
-import org.openqa.selenium.support.PageFactory;
+
 import org.testng.Assert;
 import org.openqa.selenium.*;
 
@@ -32,14 +32,15 @@ public class LandingPage {
 	@Then("^the ways to redeem points panel is visible$")
 	public void the_ways_to_redeem_points_panel_is_visible() 
 	{
-		Assert.assertTrue(Landing.WaysToRedeemYourPoints.isDisplayed());
+		Assert.assertTrue(!Landing.WaysToRedeemYourPointsPanel.isDisplayed(),"");
 	    
 	}
 
 	@Then("^contains the text 'Ways to Redeem Your Points'$")
-	public void contains_the_text_Ways_to_Redeem_Your_Points() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	public void contains_the_text_Ways_to_Redeem_Your_Points() 
+	{
+	    Assert.assertTrue(Landing.WaysToRedeemYourPointsHeader.getText().equals("Ways to Redeem Your Points"));
+	    Assert.assertTrue(Landing.WaysToRedeemYourPointsHeader.isDisplayed());
 	}
 
 
