@@ -26,13 +26,27 @@ Given user is on the landing page
 Then the ways to redeem points panel is visible
 	And contains the text 'Ways to Redeem Your Points'
 
-@tag2
-Scenario Outline: Title of your scenario outline
-Given I want to write a step with <name>
-When I check for the <value> in step
-Then I verify the <status> in step
+Scenario: 
+Check that all ways to redeem points panel contails all the links to the 
+different ways to reedem points
+Given user is on the landing page
+And the ways to redeem points panel is visible
+Then all the links are displayed 
+|href|link|
+|merchandise.html|merchandise|
+|ClientSelection=giftCards|giftCards|
+|travel-rewards|travel-reward|
+|ClientSelection=financialRewards|financialRewards|
 
-Examples:
-    | name  |value | status |
-    | name1 |  5   | success|
-    | name2 |  7   | Fail   |
+
+
+##@tag2
+##Scenario Outline: Title of your scenario outline
+##Given I want to write a step with <name>
+##When I check for the <value> in step
+##Then I verify the <status> in step
+
+##Examples:
+##    | name  |value | status |
+##    | name1 |  5   | success|
+##    | name2 |  7   | Fail   |

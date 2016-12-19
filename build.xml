@@ -3,14 +3,14 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="RBCRewardsTest">
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="DavesRewards">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../eclipse/java-neon/eclipse/"/>
     <property name="junit.output.dir" value="junit"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
-    <path id="RBCRewardsTest.classpath">
+    <path id="DavesRewards.classpath">
         <pathelement location="bin"/>
         <pathelement location="../../../../selenium-2.53.1 Java/selenium-java-2.53.1.jar"/>
         <pathelement location="../../../../selenium-2.53.1 Java/selenium-java-2.53.1-srcs.jar"/>
@@ -60,7 +60,7 @@
         <echo message="${ant.project.name}: ${ant.file}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
-            <classpath refid="RBCRewardsTest.classpath"/>
+            <classpath refid="DavesRewards.classpath"/>
         </javac>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
@@ -83,7 +83,7 @@
             <formatter type="xml"/>
             <test name="RBCRewardsCucumberTest.TestRunner" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
-            <classpath refid="RBCRewardsTest.classpath"/>
+            <classpath refid="DavesRewards.classpath"/>
         </junit>
     </target>
     <target name="junitreport">
