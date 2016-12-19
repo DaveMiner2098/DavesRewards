@@ -106,3 +106,4 @@ ScreenShot/*.png
 # Code Recommenders
 .recommenders/
 >>>>>>> 580a920cb529952f1fb1a3c17c213c6ae8e66408:Eclipse.gitignore
+/.classpath.htm
