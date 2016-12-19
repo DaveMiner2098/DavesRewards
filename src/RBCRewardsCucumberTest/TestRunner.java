@@ -8,7 +8,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "Feature"
-		,glue={"RBCStepDefn"}
+		,glue={"RBCStepDefn"},
+		plugin = {"json:C:/a/j.json"}
 		)
 
 public class TestRunner {

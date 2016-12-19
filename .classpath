@@ -30,5 +30,6 @@
 	<classpathentry kind="lib" path="C:/Users/Dave/.m2/repository/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Dave/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Dave/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dave/Cucumber Java/cucumber-reporting-2.5.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

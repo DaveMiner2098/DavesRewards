@@ -4,12 +4,13 @@ bin/
 tmp/
 *.tmp
 *.bak
-*.swp
+*.sw
 *~.nib
 local.properties
 .settings/
 .loadpath
 .recommenders
+ScreenShot/*.png
 
 # Eclipse Core
 .project
